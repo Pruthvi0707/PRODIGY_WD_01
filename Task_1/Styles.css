@@ -1,0 +1,89 @@
+/* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#navbar {
+    background: linear-gradient(90deg, #0481da, #9bbfeb);
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    padding: 10px 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+#navbar ul li a:hover::after {
+    width: 100%;
+}
+
+#navbar ul li a:hover {
+    color: #fff5e1;
+}
+
+section {
+    padding: 100px 20px;
+    margin-top: 80px;
+}
+
+#home {
+    background-color: #bbb;
+    height: 100vh;
+}
+
+#about {
+    background-color: #bbb;
+    height: 100vh;
+}
+
+#services {
+    background-color: #bbb;
+    height: 100vh;
+}
+
+#contact {
+    background-color: #bbb;
+    height: 100vh;
+}
